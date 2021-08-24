@@ -1,0 +1,39 @@
+.container{
+    background-image: url("./bg/wall.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        .cart-empty{
+            background: #fff;
+            width: 800px !important;
+            min-height: 450px;
+            margin: 50px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            .step{
+                margin-top: 20px;
+            }
+            p{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: center;
+                font-size: 20px !important;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin: 30px 0px;
+            }
+            img{
+                margin: 30px;
+            }
+        }
+}

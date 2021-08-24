@@ -1,0 +1,84 @@
+.box {
+    
+    width: 500px;
+    display: flex;
+    .search_bar {
+        width: 70%;
+        color: black;
+        .ant-input-affix-wrapper{
+            height: 30px;
+            Input {
+                width: 100%;
+                height: 100%;
+                outline: none;
+            }
+        }
+        .dropList {
+            width: 350px;
+            max-height: 400px;
+            position: absolute;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            background: rgb(255, 252, 244);
+            margin-top: 30px;
+            overflow: auto;
+            .box_link {
+                img{
+                    padding: 5px;
+                    width: 60px;
+                    height: 60px;
+                }
+                span {
+                    font-size: 16px;
+                    color: black;
+                    margin-bottom: 0px;
+                    margin-left: 10px;
+                    filter: blur(0px);
+                }
+                &:hover {
+                    cursor: pointer;
+                    background: rgba(0, 0, 0, 0.2);
+                }
+            }
+            .pro-empty {
+                width: 350px;
+                height: 350px;
+                position: absolute;
+                box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+                background: rgb(255, 252, 244);
+                color: black;
+            }
+        }
+        .mess{
+            width: 350px;
+            height: 30px;
+            position: absolute;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            background: rgb(255, 252, 244);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                height: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+        .not_found{
+            width: 350px;
+            height: 50px;
+            position: absolute;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            background: rgb(255, 252, 244);
+            text-align: center;
+            p{
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+    }
+    .btn-search{
+        border: none;
+        background: #B76E22;
+    }
+}

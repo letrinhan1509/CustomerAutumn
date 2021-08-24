@@ -1,0 +1,143 @@
+/* .slider{ */
+
+@import "variables.scss";
+
+.content-box {
+    display: flex;
+    flex-direction: row;
+    .right {
+        width: 100%;
+        .carousel {
+            margin-top: 10px;
+            width: 100%;
+            img {
+                height: 450px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .SearchResult {
+            margin-bottom: 20px;
+            
+            p {
+                font-size: 1.5em;
+                font-weight: 700;
+                margin: 20px 0px 0px 50px;
+            }
+        }
+        .product_home {
+            margin-top: 20px;
+            width: 100%;
+            .findPro{
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 20px;
+                .ant-col{
+                    display: flex;
+                    h3{
+                        font-size: 18px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .spin-wrapper{
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .ant-spin-dot{
+                    .ant-spin-dot-item{
+                        background-color: #b76e22;
+                    }
+                }
+            }
+            .card_product_home {
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+                width: 100%;
+                margin-bottom: 70px;
+                position: relative;
+                .ant-card-body {
+                    padding: 10px;
+                    .img-box {
+                        width: 100%;
+                        height: 320px;
+                        overflow: hidden;
+                        .ant-image {
+                            position: relative;
+                            transition: 0.7s;
+                            height: 100%;
+                            .ant-image-img {
+                                height: 100%;
+                            }
+                            &:hover {
+                                transition: 0.7s;
+                                transform: scale(1.3);
+                            }
+                        }
+                    }
+                    .product-price {
+                        display: flex;
+                        justify-content: center;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #b76e22;
+                        padding-top: 5px;
+                    }
+                    .product-name {
+                        display: flex;
+                        justify-content: center;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .icon_product {
+                        width: 50%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        span {
+                            color: white;
+                            filter: drop-shadow(0px 1px 10px white);
+                            transition: 0.5s;
+                            &:hover {
+                                transition: 0.5s;
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-box {
+        display: flex;
+        justify-content: center;
+        margin: 0px 20px 30px 0px;
+        .btn-load {
+            color: black;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+.not-found {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        font-size: 2em;
+        font-weight: 700;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+    img {
+        width: 700px;
+    }
+}

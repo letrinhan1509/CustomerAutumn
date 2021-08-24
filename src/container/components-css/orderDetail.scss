@@ -1,0 +1,93 @@
+.orderDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .orderDetail-wrapper {
+        margin: 30px 0;
+        background: white;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+        border-radius: 10px;
+        width: 1024px;
+        .detail-box{
+            display: flex;
+            justify-content: space-evenly;
+            .col-one {
+                padding: 10px;
+                width: 50%;
+                border-right: 1px solid #333;
+                padding-right: 60px;
+                h1 {
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 26px;
+                    margin-bottom: 20px;
+                }
+                li {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    list-style: circle;
+                    span {
+                        font-weight: 700;
+                        padding-right: 5px;
+                    }
+                    .ant-form-item{
+                        display: flex;
+                        justify-content: space-between;
+                        .ant-form-item-label{
+                            overflow: unset;
+                        }
+                        .ant-form-item-label {
+                            label {
+                                font-weight: 700;
+                                font-size: 18px;
+                            }
+                        }
+                        .ant-form-item-control{
+                            span{
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .col-two {
+                padding: 10px;
+                border-radius: 10px;
+                width: 40%;
+                h3 {
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 26px;
+                    margin-bottom: 20px;
+                }
+                .number {
+                    list-style: decimal;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    ul {
+                        li {
+                            margin-bottom: 5px;
+                            font-size: 18px;
+                            font-weight: 400;
+                            list-style: none;
+                            span {
+                                font-weight: 700;
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-box{
+            margin: 10px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
